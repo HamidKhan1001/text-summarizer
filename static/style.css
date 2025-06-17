@@ -1,0 +1,112 @@
+/* static/style.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f4f7;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background-color: #ffffff;
+  max-width: 700px;
+  width: 100%;
+  margin: 40px 20px;
+  padding: 30px 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+/* Flash Messages */
+.flash-message {
+  background-color: #fdecea;
+  color: #cc0000;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Form Labels */
+label {
+  display: block;
+  font-weight: 600;
+  color: #555555;
+  margin-top: 15px;
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  resize: vertical;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  min-height: 150px;
+}
+
+/* Divider Text */
+.divider {
+  text-align: center;
+  margin: 20px 0;
+  color: #777777;
+  font-weight: 500;
+}
+
+/* File Input */
+input[type="file"] {
+  display: block;
+  margin-top: 5px;
+}
+
+/* Button */
+button {
+  display: block;
+  margin: 25px auto 0 auto;
+  background-color: #0069d9;
+  color: #ffffff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #0053ba;
+}
+
+/* Result Box */
+.result-box {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #e8f0fe;
+  border-left: 5px solid #0069d9;
+  border-radius: 4px;
+}
+
+.result-box h2 {
+  margin-top: 0;
+  color: #333333;
+  font-size: 1.2rem;
+}
+
+.result-box p {
+  color: #444444;
+  line-height: 1.5;
+  font-size: 1rem;
+}

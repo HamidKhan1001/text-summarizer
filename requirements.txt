@@ -1,0 +1,5 @@
+Flask>=2.0
+torch>=1.13.0
+transformers>=4.20.0
+sentencepiece>=0.1.97    # if you choose a T5 model
+pdfplumber>=0.7.6        # for extracting text from PDF (optional)

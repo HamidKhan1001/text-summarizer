@@ -1,0 +1,45 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Text Summarizer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="container">
+    <h1>AI Text Summarizer</h1>
+
+    <!-- Flash Messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, msg in messages %}
+          <div class="flash-message">{{ msg }}</div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    <!-- Summarization Form -->
+    <form method="post" enctype="multipart/form-data">
+      <label for="input_text">Paste Text Here:</label>
+      <textarea id="input_text" name="input_text" rows="8" placeholder="Paste any article or text..."></textarea>
+
+      <div class="divider">— OR —</div>
+
+      <label for="file">Upload a PDF (optional):</label>
+      <input type="file" id="file" name="file" accept=".pdf" />
+
+      <button type="submit">Summarize</button>
+    </form>
+
+    <!-- Display summary if available -->
+    {% if summary %}
+      <div class="result-box">
+        <h2>Summary:</h2>
+        <p>{{ summary }}</p>
+      </div>
+    {% endif %}
+  </div>
+</body>
+</html>
